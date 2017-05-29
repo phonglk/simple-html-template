@@ -6,14 +6,14 @@ Simple HTML Template Language and parser.
 
 # API
 
-<include src="<path to html file>" />
+```<include src="<path to html file>" />```
 
 Content of the file will replace <include ... /> tag
 If there are tabs/spaces before include tag. Every line of 'content' will be prefixed by same spaces/tabs
 
 # Usage
 
-sht-cli <folder>
+```sht-cli <folder>```
 
 # Example
 node ./lib/cli.js ./example/html/
