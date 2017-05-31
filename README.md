@@ -4,6 +4,8 @@ Simple HTML Template Language and parser.
 
 ![Diagram](https://raw.githubusercontent.com/phonglk/simple-html-template/master/diagram.png)
 
+VS Code Extension https://marketplace.visualstudio.com/items?itemName=phonglk.simple-html-template
+
 # API
 
 ```<include src="<path to html file>" />```
