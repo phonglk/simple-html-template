@@ -22,12 +22,17 @@ There are 2 exposed executable
 OR
 
 package.json
+```json
 {
   "scripts": {
     "compile-template": "sht-cli ./html",
     "watch-template": "sht-cli-watch ./html"
   }
 }
+```
+### Using With NPX
+```npx sht-cli-watch ./html ```
+
 ## Configuration
 To customise output of the compilation, please place sht.config.json inside the template folder (such as "./html")
 
