@@ -1,12 +1,13 @@
-#Introduction
+# Introduction
 
 Simple HTML Template Language
 We are not trying to create new XML Language but extend the HTML to specific use case
 
-#API
-## Template
+![Diagram](https://raw.githubusercontent.com/phonglk/simple-html-template/master/diagram.png)
 
-<include src="<path to html file>" />
+# API
+
+```<include src="<path to html file>" />```
 
 Content of the file will replace <include ... /> tag
 If there are tabs/spaces before included tag. Every line of 'content' will be prefixed by same spaces/tabs
@@ -52,7 +53,7 @@ After all, there is no abnormal syntax that broke your html file. Just pure HTML
 #Example
 ```node ./lib/cli.js ./example/html/```
 
-#Test
+# Test
 ```npm test```
 
 ## TDD
