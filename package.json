@@ -1,8 +1,7 @@
 {
-  "name": "simple-html-template",
-  "version": "1.0.0",
+  "name": "sht",
+  "version": "1.1.0",
   "description": "Simple HTML Template - no big deal",
-  "main": "lib\\index.js",
   "scripts": {
     "test": "mocha",
     "test-dev": "mocha --watch --reporter min",
@@ -17,13 +16,19 @@
     "template",
     "simple"
   ],
+  "bin": {
+    "sht-cli": "./lib/cli.js",
+    "sht-cli-watch": "./lib/cli-watch.js"
+  },
   "author": "Le Khoi Phong",
   "license": "SEE LICENSE IN LICENSE",
   "bugs": {
     "url": "https://github.com/phonglk/simple-html-template/issues"
   },
   "homepage": "https://github.com/phonglk/simple-html-template#readme",
-  "dependencies": {},
+  "dependencies": {
+    "chokidar": "^2.0.4"
+  },
   "devDependencies": {
     "eslint": "^3.19.0",
     "eslint-config-airbnb-base": "^11.2.0",

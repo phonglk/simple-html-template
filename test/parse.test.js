@@ -1,4 +1,4 @@
-const { parseHTML, parseFile} = require('../lib/parse');
+const { parseHTML, parseFile } = require('../lib/parse');
 const assert = require('assert');
 const path = require('path');
 

@@ -62,10 +62,10 @@ describe('Simple HTML File Operation', () => {
     before(() => {
       fs.writeFileSync(path.join(__dirname, './assets/folder', 'sht.config.json'),
         JSON.stringify({
-          outDir: '../compiled',
+          outDir: '../out',
         }));
       parseFolder(path.join(__dirname, './assets/folder'));
-      compiledPath = path.join(__dirname, './assets/compiled');
+      compiledPath = path.join(__dirname, './assets/out');
       try {
         cfiles = fs.readdirSync(compiledPath);
       } catch (e) {
