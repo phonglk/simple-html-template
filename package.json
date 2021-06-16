@@ -27,13 +27,13 @@
   },
   "homepage": "https://github.com/phonglk/simple-html-template#readme",
   "dependencies": {
-    "chokidar": "^2.0.4"
+    "chokidar": "^3.5.2"
   },
   "devDependencies": {
     "eslint": "^3.19.0",
     "eslint-config-airbnb-base": "^11.2.0",
     "eslint-plugin-import": "^2.3.0",
-    "mocha": "^3.4.2",
-    "nyc": "^10.3.2"
+    "mocha": "^9.0.0",
+    "nyc": "^15.1.0"
   }
 }
