@@ -1,39 +1,58 @@
 {
-  "name": "sht",
-  "version": "1.1.0",
-  "description": "Simple HTML Template - no big deal",
-  "scripts": {
-    "test": "mocha",
-    "test-dev": "mocha --watch --reporter min",
-    "test-coverage": "nyc --reporter=text mocha"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/phonglk/simple-html-template.git"
-  },
-  "keywords": [
-    "html",
-    "template",
-    "simple"
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
   ],
-  "bin": {
-    "sht-cli": "./lib/cli.js",
-    "sht-cli-watch": "./lib/cli-watch.js"
+  "engines": {
+    "node": ">=10"
   },
-  "author": "Le Khoi Phong",
-  "license": "SEE LICENSE IN LICENSE",
-  "bugs": {
-    "url": "https://github.com/phonglk/simple-html-template/issues"
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why"
   },
-  "homepage": "https://github.com/phonglk/simple-html-template#readme",
-  "dependencies": {
-    "chokidar": "^2.0.4"
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
   },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "name": "simple-html-template",
+  "author": "Phong Le",
+  "module": "dist/simple-html-template.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/simple-html-template.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/simple-html-template.esm.js",
+      "limit": "10 KB"
+    }
+  ],
   "devDependencies": {
-    "eslint": "^3.19.0",
-    "eslint-config-airbnb-base": "^11.2.0",
-    "eslint-plugin-import": "^2.3.0",
-    "mocha": "^3.4.2",
-    "nyc": "^10.3.2"
+    "@size-limit/preset-small-lib": "^8.1.0",
+    "husky": "^8.0.1",
+    "size-limit": "^8.1.0",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.4.0",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "html5parser": "^2.0.2",
+    "rc": "^1.2.8"
   }
 }
